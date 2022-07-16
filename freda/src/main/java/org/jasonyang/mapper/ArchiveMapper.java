@@ -4,12 +4,17 @@ import java.util.List;
 import java.util.Map;
 
 import org.jasonyang.model.Archive;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.stereotype.Repository;
+
 /**
  * @author jason
  */
+@Repository
 public interface ArchiveMapper {
     /**
      * 根据主键删除文档
+     *
      * @param id
      * @return
      */
@@ -17,6 +22,7 @@ public interface ArchiveMapper {
 
     /**
      * 插入文档
+     *
      * @param record
      * @return
      */
@@ -24,6 +30,7 @@ public interface ArchiveMapper {
 
     /**
      * 插入文档
+     *
      * @param record
      * @return
      */
@@ -31,6 +38,7 @@ public interface ArchiveMapper {
 
     /**
      * 根据ID查询文档（后台管理用）
+     *
      * @param id
      * @return
      */
@@ -38,6 +46,7 @@ public interface ArchiveMapper {
 
     /**
      * 根据ID查询文档（前台用，不查询markdown内容）
+     *
      * @param id
      * @return
      */
@@ -45,6 +54,7 @@ public interface ArchiveMapper {
 
     /**
      * 更新文档
+     *
      * @param record
      * @return
      */
@@ -52,6 +62,7 @@ public interface ArchiveMapper {
 
     /**
      * 统计文档个数
+     *
      * @param paramsMap
      * @return
      */
@@ -59,6 +70,7 @@ public interface ArchiveMapper {
 
     /**
      * 查询文档
+     *
      * @param paramsMap
      * @return
      */
